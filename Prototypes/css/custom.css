@@ -111,3 +111,7 @@ table {
     table-layout: fixed;
     word-wrap: break-word;
 }
+
+.circular {
+    border-radius: 50%;
+}
