@@ -106,7 +106,6 @@ ul ul a {
     background:  rgb(68, 90, 100);
 }
 
-
 table {
     table-layout: fixed;
     word-wrap: break-word;
@@ -114,4 +113,10 @@ table {
 
 .circular {
     border-radius: 50%;
+}
+
+.avatar{
+    width: 80px;
+    height: 80px;
+    alignment: middle;
 }
