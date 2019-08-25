@@ -118,5 +118,5 @@ table {
 .avatar{
     width: 80px;
     height: 80px;
-    alignment: middle;
+    border-radius: 50%;
 }
