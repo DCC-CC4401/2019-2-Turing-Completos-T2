@@ -59,7 +59,7 @@
     </nav>
     <!--EL RESTO-->
     <div class="container-fluid text-center p-4 shadow">
-      <div class="row">
+      <div class="row py-4">
         <div class="col-2">
           RELOJ
         </div>
@@ -71,16 +71,16 @@
       </div>
       <div class="row">
         <div class="col">
-            <button type="button" class="btn btn-outline-success"><<</button>
-        </div>
-        <div class="col h4">
-          Semana del lunes 26 de agosto, 2019
+          <button type="button" class="btn btn-sm btn-success">
+            <<</button> </div> <div class="col h4">
+              Semana del lunes 26 de agosto, 2019
         </div>
         <div class="col">
-            <button type="button" class="btn btn-outline-success">>></button>
+          <button type="button" class="btn btn-sm btn-success">>></button>
         </div>
       </div>
-      <div class="row p-3">
+      <!--HORARIO-->
+      <div class="row px-3">
         <table class="table table-bordered table-sm shadow text-center ">
           <thead class="thead-dark">
             <tr>
@@ -206,6 +206,37 @@
           </tr>
         </table>
       </div>
+      <!--FILTROS-->
+      <div class="row">
+        <div class="col-9"></div>
+        <div class="col-3">
+          <div class="dropdown show">
+            <a class="btn btn-secondary btn-success btn-sm btn-block dropdown-toggle dropdown-toggle-split mb-3 shadow"
+              href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              Filtros por categoría
+            </a>
+            <div class="dropdown-menu dropdown-menu-right px-4 py-3" aria-labelledby="dropdownMenuLink">
+              <div class="form-check px-4">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Categoría 1</label>
+              </div>
+              <div class="form-check px-4">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Categoría 2</label>
+              </div>
+              <div class="form-check px-4">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Categoría 3</label>
+              </div>
+              <div class="form-check px-4">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Categoría 4</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <!--DATOS SEMANALES Y DE AMIGOS-->
       <div class="row">
         <div class="col">
@@ -259,7 +290,7 @@
             <thead class="thead-dark">
               <tr>
                 <th scope="col">Promedio</th>
-                <th scope="col">Suma</th>
+                <th scope="col">Desviación Estándar</th>
               </tr>
             </thead>
             <tbody>
