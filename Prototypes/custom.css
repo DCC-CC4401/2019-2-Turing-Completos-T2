@@ -73,14 +73,14 @@ a:focus{
 	display: block;
 }
 #sidebar ul li a:hover {
-    color: rgb(164, 179, 238);
+    color: rgb(164, 214, 238);
     background: rgb(94, 94, 94);
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #fff;
-    background: #33384d;
+    background:  rgb(92, 122, 136);
 }
 a[data-toggle="collapse"] {
     position: relative;
@@ -96,7 +96,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #33384d;
+    background:  rgb(68, 90, 100);
 }
 
 
