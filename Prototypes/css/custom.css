@@ -1,28 +1,35 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body{font-family: 'Poppins', sans-serif;
-     background: #ffffff}
-p{font-family: 'Poppins', sans-serif;
-  font-size: 1.1em;
-	font-weight: 300;
-	line-height: 1.7em;
-	color: rgb(255, 255, 255);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff
 }
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: rgb(255, 255, 255);
+}
+
 body {
     background-color: #f8f8f8;
 }
 
-.nav-tabs{
+.nav-tabs {
     border-bottom-color: transparent;
 }
 
-.nav-link-fix{}
+.nav-link-fix {
+}
 
 .nav-link.nav-link-fix {
     background-color: transparent;
     border-color: #bec2c6;
 }
 
-.nav-link.nav-link-fix.active{
+.nav-link.nav-link-fix.active {
     background-color: transparent;
     border-color: #bec2c6;
     border-bottom-color: transparent;
@@ -30,30 +37,31 @@ body {
 
 a,
 a:hover,
-a:focus{
-	color: inherit;
-	text-decoration: none;
-	transition: all 0.3s;
-}
-.navbar{
-	padding: 15px 10px;
-	background: rgb(37, 37, 37);
-	border: none;
-	border-radius: 0;
-	margin-bottom: 0px;
-	box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
 }
 
-.navbar-btn{
-	box-shadow: none;
-	outline: none!important;
-	border: none;
+.navbar {
+    padding: 15px 10px;
+    background: rgb(37, 37, 37);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.line{
-	width: 100%;
-	height: 1px;
-	border-bottom: 1px dashed #ddd;
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
 }
 
 .wrapper {
@@ -66,6 +74,7 @@ a:focus{
 .main {
     margin-left: 250px;
 }
+
 #sidebar {
     min-width: 250px;
     max-width: 250px;
@@ -75,44 +84,49 @@ a:focus{
     transition: all 0.3s;
     position: fixed;
 }
-#sidebar.active{
-	margin-left: -250px;
+
+#sidebar.active {
+    margin-left: -250px;
 }
 
-#sidebar .sidebar-header{
-	padding: 20px;
-	background: #C50005;
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: rgb(44, 44, 44);
 }
-#sidebar ul.components{
+
+#sidebar ul.components {
     padding: 20px 0px;
     border-top: 1px solid #47748b;
-	border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #47748b;
 }
 
-#sidebar ul p{
-	padding: 10px;
-	font-size: 1.1em;
-	display: block;
+#sidebar ul p {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
 }
 
-#sidebar ul li a{
-	padding: 10px;
-	font-size: 1.1em;
-	display: block;
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
 }
+
 #sidebar ul li a:hover {
     color: rgb(164, 214, 238);
     background: rgb(94, 94, 94);
 }
 
-#sidebar ul li.active>a,
+#sidebar ul li.active > a,
 a[aria-expanded="true"] {
     color: #fff;
-    background:  rgb(92, 122, 136);
+    background: rgb(92, 122, 136);
 }
+
 a[data-toggle="collapse"] {
     position: relative;
 }
+
 .dropdown-toggle::after {
     display: block;
     position: absolute;
@@ -124,7 +138,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background:  rgb(68, 90, 100);
+    background: rgb(68, 90, 100);
 }
 
 table {
@@ -136,27 +150,29 @@ table {
     border-radius: 50%;
 }
 
-.avatar{
+.avatar {
     width: 80px;
     height: 80px;
     border-radius: 50%;
 }
 
-.cambio-imagen{
-  background-color: lightseagreen;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+.cambio-imagen {
+    background-color: lightseagreen;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
+
 .fr-link {
-    color: #005cbf;
+    color: #3028AB;
 }
 
 .fr-link:hover {
-    color: #1e7e34;
+    color: #48AF05;
 }
+

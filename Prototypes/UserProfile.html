@@ -75,20 +75,24 @@
             <div class="col offset-sm-2 col-sm-8">
                 <ul class="nav nav-tabs" id="pestañas-perfil-de-usuario" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link nav-link-fix active" id="profile-tab-mi-perfil" data-toggle="tab" href="#Perfil"
+                        <a class="nav-link nav-link-fix active" id="profile-tab-mi-perfil" data-toggle="tab"
+                           href="#Perfil"
                            role="tab"
                            aria-controls="home" aria-selected="true">Mi Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-fix" id="profile-tab-seguridad" data-toggle="tab" href="#Seguridad" role="tab"
+                        <a class="nav-link nav-link-fix" id="profile-tab-seguridad" data-toggle="tab" href="#Seguridad"
+                           role="tab"
                            aria-controls="profile" aria-selected="false">Seguridad</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-fix" id="contact-tab-amigos" data-toggle="tab" href="#Amigos" role="tab"
+                        <a class="nav-link nav-link-fix" id="contact-tab-amigos" data-toggle="tab" href="#Amigos"
+                           role="tab"
                            aria-controls="contact" aria-selected="false">Amigos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link nav-link-fix" id="contact-tab-actividades" data-toggle="tab" href="#Actividades"
+                        <a class="nav-link nav-link-fix" id="contact-tab-actividades" data-toggle="tab"
+                           href="#Actividades"
                            role="tab"
                            aria-controls="contact" aria-selected="false">Mis Actividades</a>
                     </li>
@@ -166,11 +170,10 @@
                             </div>
                         </fieldset>
                     </form>
-                    <button type="submit" class="btn btn-primary">Cambiar contraseña</button>
+                    <button type="submit" class="btn btn-info">Cambiar contraseña</button>
                 </div>
 
                 <!--PESTAÑA AMIGOS-->
-                <div class="tab-pane fade" id="Amigos" role="tabpanel" aria-labelledby="Amigos-tab">
 
                     <!-- Solicitudes de amistad -->
                     <div class="card" style="width: 100%;">
@@ -188,7 +191,7 @@
                                     Keanu Reeves</a>
                                 <button type="button" class="btn btn-sm btn-outline-success float-right">Aceptar
                                 </button>
-                                <p class="float-right" style="margin-left: 10px">     </p>
+                                <p class="float-right" style="margin-left: 10px"></p>
                                 <button type="button" class="btn btn-sm btn-outline-danger float-right">Rechazar
                                 </button>
                             </li>
@@ -197,7 +200,7 @@
                                     Bobby Tables</a>
                                 <button type="button" class="btn btn-sm btn-outline-success float-right">Aceptar
                                 </button>
-                                <p class="float-right" style="margin-left: 10px">     </p>
+                                <p class="float-right" style="margin-left: 10px"></p>
                                 <button type="button" class="btn btn-sm btn-outline-danger float-right">Rechazar
                                 </button>
                             </li>
@@ -206,7 +209,7 @@
                                     Grace Hopper</a>
                                 <button type="button" class="btn btn-sm btn-outline-success float-right">Aceptar
                                 </button>
-                                <p class="float-right" style="margin-left: 10px">     </p>
+                                <p class="float-right" style="margin-left: 10px"></p>
                                 <button type="button" class="btn btn-sm btn-outline-danger float-right">Rechazar
                                 </button>
                             </li>
@@ -214,7 +217,7 @@
                                 <a href="404" class="fr-link">Ada Lovelace</a>
                                 <button type="button" class="btn btn-sm btn-outline-success float-right">Aceptar
                                 </button>
-                                <p class="float-right" style="margin-left: 10px">     </p>
+                                <p class="float-right" style="margin-left: 10px"></p>
                                 <button type="button" class="btn btn-sm btn-outline-danger float-right">Rechazar
                                 </button>
                             </li>
@@ -228,7 +231,8 @@
                             Amigos
                             <button class="btn btn-sm btn-primary float-right" type="button" data-toggle="collapse"
                                     data-target="#friends-list" aria-expanded="false"
-                                    aria-controls="friends-list" id="friends-toggle" onclick="toggleName(this.id)">Ver más
+                                    aria-controls="friends-list" id="friends-toggle" onclick="toggleName(this.id)">Ver
+                                más
                             </button>
                         </div>
                         <ul class="list-group list-group-flush collapse" id="friends-list">
@@ -260,12 +264,54 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- PESTAÑA ACTIVIDADES -->
+
                 <div class="tab-pane fade" id="Actividades" role="tabpanel" aria-labelledby="Actividades-tab">
-                    ACTIVIDADES
+
+                    <button type="button" class="btn btn-secondary btn-lg btn-block"> Crear una nueva actividad</button>
+
+                    <div class="card">
+                        <div class="card-body">
+                            Dormir
+                            <button type="button" class="btn btn-sm btn-outline-success float-right"> Modificar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            Estudiar
+                            <button type="button" class="btn btn-sm btn-outline-success float-right"> Modificar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            Almorzar
+                            <button type="button" class="btn btn-sm btn-outline-success float-right"> Modificar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            Hacerle cariño al Michi
+                            <button type="button" class="btn btn-sm btn-outline-success float-right"> Modificar</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            Jugar con el Michi
+                            <button type="button" class="btn btn-sm btn-outline-success float-right"> Modificar</button>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
+</div>
 </div>
 
 <!-- BOOTSTRAP JS, DO NOT DELETE -->
