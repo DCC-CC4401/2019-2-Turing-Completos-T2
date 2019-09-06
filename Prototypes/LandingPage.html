@@ -8,7 +8,7 @@
     <!-- BOOTSTRAP CSS, DO NOT DELETE -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/custom.css">
-
+    <script src="js/clock.js"></script>
 </head>
 
 <body>
@@ -66,7 +66,12 @@
     <div class="container-fluid text-center p-4 main">
         <div class="row py-4">
             <div class="col-2">
-                RELOJ
+                <!--RELOJ-->
+                <span id="chronotime">0:00:00</span>
+                    <form name="chronoForm">
+                        <input type="button" name="startstop" value="start!" onClick="chronoStart()" />
+                        <input type="button" name="reset" value="reset!" onClick="chronoReset()" />
+                    </form>
             </div>
             <div class="col-8">
             </div>
@@ -81,7 +86,7 @@
                 </button>
             </div>
             <div class="col-8 h4">
-                Semana del lunes 26 de agosto, 2019
+                Semana del lunes 09 de septiembre, 2019
             </div>
             <div class="col-2">
                 <button type="button" class="btn btn-sm btn-success">>></button>
