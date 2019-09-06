@@ -176,3 +176,24 @@ table {
     color: #48AF05;
 }
 
+.activity-icon{
+    width: 35px;
+    height: 35px;
+    alignment: inherit;
+}
+
+.sleep-activity{
+    background-color: #AED6F1;
+}
+
+.eat-activity{
+    background-color: #2ECC71;
+}
+
+.study-activity{
+    background-color: #F1948A;
+}
+
+.animal-activity{
+    background-color: #D7BDE2;
+}
