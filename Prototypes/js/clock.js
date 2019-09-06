@@ -6,29 +6,29 @@ var timerID = 0
 
 function chrono(){
 	end = new Date()
-	diff = end - start
+    diff = end - start
 	diff = new Date(diff)
 	var sec = diff.getSeconds()
 	var min = diff.getMinutes()
-	var hr = diff.getHours()-1
+	var hr = diff.getHours()-21
 	if (min < 10){
 		min = "0" + min
 	}
 	if (sec < 10){
 		sec = "0" + sec
 	}
-	document.getElementById("chronotime").innerHTML = hr + ":" + min + ":" + sec
+    document.getElementById("chronotime").innerHTML = hr + ":" + min + ":" + sec
 	timerID = setTimeout("chrono()", 10)
 }
 function chronoStart(){
-	document.chronoForm.startstop.value = "stop!"
+	document.chronoForm.startstop.value = "Detener"
 	document.chronoForm.startstop.onclick = chronoStop
 	document.chronoForm.reset.onclick = chronoReset
-	start = new Date()
+    start = new Date()
 	chrono()
 }
 function chronoContinue(){
-	document.chronoForm.startstop.value = "stop!"
+	document.chronoForm.startstop.value = "Detener"
 	document.chronoForm.startstop.onclick = chronoStop
 	document.chronoForm.reset.onclick = chronoReset
 	start = new Date()-diff
@@ -44,7 +44,7 @@ function chronoStopReset(){
 	document.chronoForm.startstop.onclick = chronoStart
 }
 function chronoStop(){
-	document.chronoForm.startstop.value = "start!"
+	document.chronoForm.startstop.value = "Reanudar"
 	document.chronoForm.startstop.onclick = chronoContinue
 	document.chronoForm.reset.onclick = chronoStopReset
 	clearTimeout(timerID)
