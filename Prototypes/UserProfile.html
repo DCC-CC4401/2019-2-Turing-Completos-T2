@@ -12,15 +12,6 @@
 
 <body>
 
-<!-- BOOTSTRAP JS, DO NOT DELETE -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="js/bootstrap.min.js"></script>
-
 <div class="wrapper">
 
     <!--SIDEBAR-->
@@ -34,14 +25,14 @@
         </div>
         <ul class="list-unstyled components text-left">
             <li>
-                <a href="/Prototypes/LandingPage.html">Inicio</a>
+                <a href="../Prototypes/LandingPage.html">Inicio</a>
             </li>
             <li>
                 <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false"
                    class="dropdown-toggle">Perfil</a>
                 <ul class="collapse list-unstyled text-left" id="pageSubmenu">
                     <li>
-                        <a href="/Prototypes/UserProfile.html">Mi Perfil</a>
+                        <a href="../Prototypes/UserProfile.html">Mi Perfil</a>
                     </li>
                     <li>
                         <a href="#">Seguridad</a>
@@ -73,7 +64,7 @@
         <div class="row py-4">
             <div class="col text-center">
                 <p class="h4 text-center text-dark">Nombre de usuario</p>
-                <button type="button" class="cambio-imagen">Cambiar imagen</button>
+                <button type="button" class="btn btn-info">Cambiar imagen</button>
             </div>
         </div>
 
@@ -84,20 +75,20 @@
             <div class="col offset-sm-2 col-sm-8">
                 <ul class="nav nav-tabs" id="pestañas-perfil-de-usuario" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="profile-tab-mi-perfil" data-toggle="tab" href="#Perfil"
+                        <a class="nav-link nav-link-fix active" id="profile-tab-mi-perfil" data-toggle="tab" href="#Perfil"
                            role="tab"
                            aria-controls="home" aria-selected="true">Mi Perfil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab-seguridad" data-toggle="tab" href="#Seguridad" role="tab"
+                        <a class="nav-link nav-link-fix" id="profile-tab-seguridad" data-toggle="tab" href="#Seguridad" role="tab"
                            aria-controls="profile" aria-selected="false">Seguridad</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact-tab-amigos" data-toggle="tab" href="#Amigos" role="tab"
+                        <a class="nav-link nav-link-fix" id="contact-tab-amigos" data-toggle="tab" href="#Amigos" role="tab"
                            aria-controls="contact" aria-selected="false">Amigos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="contact-tab-actividades" data-toggle="tab" href="#Actividades"
+                        <a class="nav-link nav-link-fix" id="contact-tab-actividades" data-toggle="tab" href="#Actividades"
                            role="tab"
                            aria-controls="contact" aria-selected="false">Mis Actividades</a>
                     </li>
@@ -164,7 +155,7 @@
                             <div class="form-group">
                                 <label for="disabledTextInput">Nueva contraseña:</label>
                                 <input type="text" id="disabledTextInputContraseñaNueva" class="form-control"
-                                       placeholder="Nueva contrasela">
+                                       placeholder="Nueva contraseña">
                             </div>
 
                             <!--Contraseña confirmacion-->
@@ -180,7 +171,94 @@
 
                 <!--PESTAÑA AMIGOS-->
                 <div class="tab-pane fade" id="Amigos" role="tabpanel" aria-labelledby="Amigos-tab">
-                    AMIGOS
+
+                    <!-- Solicitudes de amistad -->
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            Solicitudes
+                            <button class="btn btn-sm btn-primary float-right" type="button" data-toggle="collapse"
+                                    data-target="#friends-request-list" aria-expanded="false"
+                                    aria-controls="friends-list" id="friends-request-toggle"
+                                    onclick="toggleName(this.id)">Ver más
+                            </button>
+                        </div>
+                        <ul class="list-group list-group-flush collapse" id="friends-request-list">
+                            <li class="list-group-item">
+                                <a href="404" class="fr-link">
+                                    Keanu Reeves</a>
+                                <button type="button" class="btn btn-sm btn-outline-success float-right">Aceptar
+                                </button>
+                                <p class="float-right" style="margin-left: 10px">     </p>
+                                <button type="button" class="btn btn-sm btn-outline-danger float-right">Rechazar
+                                </button>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="404" class="fr-link">
+                                    Bobby Tables</a>
+                                <button type="button" class="btn btn-sm btn-outline-success float-right">Aceptar
+                                </button>
+                                <p class="float-right" style="margin-left: 10px">     </p>
+                                <button type="button" class="btn btn-sm btn-outline-danger float-right">Rechazar
+                                </button>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="404" class="fr-link">
+                                    Grace Hopper</a>
+                                <button type="button" class="btn btn-sm btn-outline-success float-right">Aceptar
+                                </button>
+                                <p class="float-right" style="margin-left: 10px">     </p>
+                                <button type="button" class="btn btn-sm btn-outline-danger float-right">Rechazar
+                                </button>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="404" class="fr-link">Ada Lovelace</a>
+                                <button type="button" class="btn btn-sm btn-outline-success float-right">Aceptar
+                                </button>
+                                <p class="float-right" style="margin-left: 10px">     </p>
+                                <button type="button" class="btn btn-sm btn-outline-danger float-right">Rechazar
+                                </button>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Amigos aceptados -->
+                    <div class="card" style="width: 100%;">
+                        <div class="card-header">
+                            Amigos
+                            <button class="btn btn-sm btn-primary float-right" type="button" data-toggle="collapse"
+                                    data-target="#friends-list" aria-expanded="false"
+                                    aria-controls="friends-list" id="friends-toggle" onclick="toggleName(this.id)">Ver más
+                            </button>
+                        </div>
+                        <ul class="list-group list-group-flush collapse" id="friends-list">
+                            <li class="list-group-item">
+                                <a href="404" class="fr-link">
+                                    Christopher Machine</a>
+                                <button type="button" class="btn btn-sm btn-outline-danger float-right">Eliminar
+                                </button>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="404" class="fr-link">
+                                    Alonzo Church</a>
+                                <button type="button" class="btn btn-sm btn-outline-danger float-right">Eliminar
+                                </button>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="404" class="fr-link">
+                                    Allan Hotdog</a>
+                                <button type="button" class="btn btn-sm btn-outline-danger float-right">Eliminar
+                                </button>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="404" class="fr-link">
+                                    Joan Clarke</a>
+                                <button type="button" class="btn btn-sm btn-outline-danger float-right">Eliminar
+                                </button>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
                 <div class="tab-pane fade" id="Actividades" role="tabpanel" aria-labelledby="Actividades-tab">
                     ACTIVIDADES
@@ -189,6 +267,16 @@
         </div>
     </div>
 </div>
+
+<!-- BOOTSTRAP JS, DO NOT DELETE -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/toggleName.js"></script>
 </body>
 
 </html>
