@@ -7,6 +7,27 @@ p{font-family: 'Poppins', sans-serif;
 	line-height: 1.7em;
 	color: rgb(255, 255, 255);
 }
+body {
+    background-color: #f8f8f8;
+}
+
+.nav-tabs{
+    border-bottom-color: transparent;
+}
+
+.nav-link-fix{}
+
+.nav-link.nav-link-fix {
+    background-color: transparent;
+    border-color: #bec2c6;
+}
+
+.nav-link.nav-link-fix.active{
+    background-color: transparent;
+    border-color: #bec2c6;
+    border-bottom-color: transparent;
+}
+
 a,
 a:hover,
 a:focus{
@@ -60,7 +81,7 @@ a:focus{
 
 #sidebar .sidebar-header{
 	padding: 20px;
-	background: #161616;
+	background: #C50005;
 }
 #sidebar ul.components{
     padding: 20px 0px;
@@ -118,5 +139,24 @@ table {
 .avatar{
     width: 80px;
     height: 80px;
-    alignment: middle;
+    border-radius: 50%;
+}
+
+.cambio-imagen{
+  background-color: lightseagreen;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.fr-link {
+    color: #005cbf;
+}
+
+.fr-link:hover {
+    color: #1e7e34;
 }
