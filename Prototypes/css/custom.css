@@ -1,5 +1,4 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
 body {
     font-family: 'Poppins', sans-serif;
     background: #ffffff
@@ -17,18 +16,21 @@ body {
     background-color: #f8f8f8;
 }
 
+
 /* ESPACIADO STANDAR */
+
 .spaced {
     margin: 3px;
 }
 
+
 /*TABS DE NAVEGACION*/
+
 .nav-tabs {
     border-bottom-color: transparent;
 }
 
-.nav-link-fix {
-}
+.nav-link-fix {}
 
 .nav-link.nav-link-fix {
     background-color: transparent;
@@ -73,7 +75,6 @@ a:focus {
 .wrapper {
     display: flex;
     width: 100%;
-
     position: absolute;
 }
 
@@ -81,7 +82,9 @@ a:focus {
     margin-left: 250px;
 }
 
+
 /* SIDEBAR */
+
 #sidebar {
     min-width: 250px;
     max-width: 250px;
@@ -124,7 +127,7 @@ a:focus {
     background: #036b65;
 }
 
-#sidebar ul li.active > a,
+#sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #ffffff;
     background: #036b65;
@@ -153,6 +156,7 @@ table {
     word-wrap: break-word;
 }
 
+
 /* AVATAR PARA PERFIL USUARIO*/
 
 .circular {
@@ -164,6 +168,7 @@ table {
     height: 80px;
     border-radius: 50%;
 }
+
 
 /* LINKS DE AMIGOS */
 
@@ -237,10 +242,10 @@ table {
     border-color: #00aa9f;
 }
 
-
 .btn-outline-success {
     border-color: #006300;
-    color: #006300;;
+    color: #006300;
+    ;
 }
 
 .btn-outline-success:hover {
@@ -266,4 +271,14 @@ table {
 .btn.btn-secondary:hover {
     border-color: #00aa9f;
     background-color: #00aa9f;
+}
+
+.scroll-horario {
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.table-head-sticky {
+    position: sticky;
+    top: 0;
 }
