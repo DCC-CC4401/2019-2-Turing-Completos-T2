@@ -17,6 +17,12 @@ body {
     background-color: #f8f8f8;
 }
 
+/* ESPACIADO STANDAR */
+.spaced {
+    margin: 3px;
+}
+
+/*TABS DE NAVEGACION*/
 .nav-tabs {
     border-bottom-color: transparent;
 }
@@ -75,6 +81,7 @@ a:focus {
     margin-left: 250px;
 }
 
+/* SIDEBAR */
 #sidebar {
     min-width: 250px;
     max-width: 250px;
@@ -146,6 +153,8 @@ table {
     word-wrap: break-word;
 }
 
+/* AVATAR PARA PERFIL USUARIO*/
+
 .circular {
     border-radius: 50%;
 }
@@ -156,7 +165,7 @@ table {
     border-radius: 50%;
 }
 
-/* CSS relacionados con el perfil */
+/* LINKS DE AMIGOS */
 
 .fr-link {
     color: #334b49;
@@ -166,14 +175,13 @@ table {
     color: #00c9bc;
 }
 
+
+/* ACTIVIDADES */
+
 .activity-icon {
     width: 35px;
     height: 35px;
     alignment: inherit;
-}
-
-.spaced {
-    margin: 3px;
 }
 
 .sleep-activity {
@@ -196,7 +204,8 @@ table {
     background-color: #cc73a4;
 }
 
-/** Botones **/
+
+/* BOTONES */
 
 .cerrar-sesion {
     background-color: #c73002;
