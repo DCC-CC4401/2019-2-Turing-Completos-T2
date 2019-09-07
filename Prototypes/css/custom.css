@@ -96,8 +96,8 @@ a:focus {
 
 #sidebar ul.components {
     padding: 20px 0px;
-    border-top: 1px solid #47748b;
-    border-bottom: 1px solid #47748b;
+    border-top: 1px solid #a61616;
+    border-bottom: 1px solid #a61616;
 }
 
 #sidebar ul p {
@@ -156,17 +156,7 @@ table {
     border-radius: 50%;
 }
 
-.cambio-imagen {
-    background-color: lightseagreen;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-}
-
+/* CSS relacionados con el perfil */
 
 .fr-link {
     color: #3028AB;
@@ -176,24 +166,101 @@ table {
     color: #48AF05;
 }
 
-.activity-icon{
+.activity-icon {
     width: 35px;
     height: 35px;
     alignment: inherit;
 }
 
-.sleep-activity{
+.spaced {
+    margin: 3px;
+}
+
+.sleep-activity {
     background-color: #AED6F1;
 }
 
-.eat-activity{
+.eat-activity {
     background-color: #2ECC71;
 }
 
-.study-activity{
+.study-activity {
     background-color: #F1948A;
 }
 
-.animal-activity{
+.animal-activity {
     background-color: #D7BDE2;
+}
+
+/** Botones **/
+
+.cerrar-sesion {
+    background-color: #cc0000;
+    border-color: #cc0000;
+}
+
+.cerrar-sesion:hover {
+    background-color: #de4e58;
+    border-color: #de4e58;
+}
+
+.btn-success {
+    background-color: #006300;
+    border-color: #006300;
+}
+
+.btn-success:hover {
+    background-color: #579512;
+    border-color: #579512;
+}
+
+.btn-info{
+    background-color: #f76451;
+    border-color: #f76451;
+}
+
+.btn-info:hover {
+    background-color: #f76451;
+    border-color: #f76451;
+}
+
+.btn-info.focus, .btn-info:focus {
+    box-shadow: 0 0 0 .2rem #ffac92;
+}
+
+.btn-info:not(:disabled):not(.disabled).active:focus,
+.btn-info:not(:disabled):not(.disabled):active:focus,
+.show>.btn-info.dropdown-toggle:focus {
+ box-shadow: 0 0 0 .2rem #ffac92;
+}
+
+.btn-info:not(:disabled):not(.disabled):active,
+.show>.btn-info.dropdown-toggle {
+    background-color: #f76451;
+    border-color: #f76451;
+}
+
+.btn-outline-success {
+    border-color: #006300;
+    color: #006300;;
+}
+
+.btn-outline-success:hover {
+    background-color: #579512;
+    border-color: #579512;
+}
+
+.btn-outline-danger{
+    border-color: #cc0000;
+    color:#cc0000;
+}
+
+.btn-outline-danger:hover {
+    background-color: #de4e58;
+    border-color: #de4e58;
+}
+
+.btn.btn-secondary{
+    border-color: #f76451;
+    background-color:#f76451;
 }
