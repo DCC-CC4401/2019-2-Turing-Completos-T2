@@ -1,4 +1,4 @@
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+@import "https://fonts.googleapis.com/css?family=Poppins:200,300,400,700";
 body {
     font-family: 'Poppins', sans-serif;
     background: #ffffff
@@ -6,7 +6,7 @@ body {
 
 p {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
+    font-size: 1.2em;
     font-weight: 300;
     line-height: 1.7em;
     color: rgb(255, 255, 255);
@@ -106,8 +106,8 @@ a:focus {
 
 #sidebar ul.components {
     padding: 20px 0px;
-    border-top: 1px solid #036b65;
-    border-bottom: 1px solid #036b65;
+    border-top: 1px solid #034e6b;
+    border-bottom: 1px solid #034a6b;
 }
 
 #sidebar ul p {
@@ -124,13 +124,13 @@ a:focus {
 
 #sidebar ul li a:hover {
     color: #ffffff;
-    background: #036b65;
+    background: #034a6b;
 }
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
     color: #ffffff;
-    background: #036b65;
+    background: #034a6b;
 }
 
 a[data-toggle="collapse"] {
@@ -148,7 +148,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #334b49;
+    background: #33424b;
 }
 
 table {
@@ -274,11 +274,15 @@ table {
 }
 
 .scroll-horario {
-    height: 400px;
+    height: 450px;
     overflow-y: scroll;
 }
 
 .table-head-sticky {
     position: sticky;
     top: 0;
+}
+
+.invert-color {
+    filter: invert(100%);
 }
