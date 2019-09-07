@@ -173,11 +173,11 @@ table {
 /* LINKS DE AMIGOS */
 
 .fr-link {
-    color: #334b49;
+    color: #33454b;
 }
 
 .fr-link:hover {
-    color: #00c9bc;
+    color: #0089c9;
 }
 
 
@@ -211,67 +211,6 @@ table {
 
 
 /* BOTONES */
-
-.cerrar-sesion {
-    background-color: #c73002;
-    border-color: #c73002;
-}
-
-.cerrar-sesion:hover {
-    background-color: #f04a0e;
-    border-color: #f04a0e;
-}
-
-.btn-success {
-    background-color: #00a772;
-    border-color: #00a772;
-}
-
-.btn-success:hover {
-    background-color: #16C28B;
-    border-color: #16C28B;
-}
-
-.btn-info {
-    background-color: #036b65;
-    border-color: #036b65;
-}
-
-.btn-info:hover {
-    background-color: #00aa9f;
-    border-color: #00aa9f;
-}
-
-.btn-outline-success {
-    border-color: #006300;
-    color: #006300;
-    ;
-}
-
-.btn-outline-success:hover {
-    background-color: #579512;
-    border-color: #579512;
-}
-
-.btn-outline-danger {
-    border-color: #c73002;
-    color: #c73002;
-}
-
-.btn-outline-danger:hover {
-    background-color: #f04a0e;
-    border-color: #f04a0e;
-}
-
-.btn.btn-secondary {
-    border-color: #036b65;
-    background-color: #036b65;
-}
-
-.btn.btn-secondary:hover {
-    border-color: #00aa9f;
-    background-color: #00aa9f;
-}
 
 .scroll-horario {
     height: 450px;
