@@ -234,7 +234,7 @@
                         <td></td>
                         <td></td>
                         <td class="table-danger ">
-                            <button class="btn btn-sm btn-block" data-toggle="modal" data-target="#Activity"> asd</button>
+                            <button class="btn btn-sm btn-block" data-toggle="modal" data-target="#Activity"> Ida Universidad</button>
                         </td>
                         <td></td>
                         <td></td>
@@ -372,45 +372,44 @@
                                                     <label for="nombractividad" class="col-4 col-form-label">Nombre de la
                                                     actividad</label>
                                                     <div class="col-8">
-                                                        <input id="nombractividad" name="nombreactividad" placeholder="Viajar" class="form-control" required="required" type="text">
+                                                        <input id="nombractividad" name="nombreactividad" value="Ida Universidad" class="form-control" required="required" type="text" readonly="readonly">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="descripcionf" class="col-4 col-form-label">Descripción</label>
                                                     <div class="col-8">
-                                                        <textarea id="descripcionf" name="descripcion" placeholder="Descripción" cols="40" rows="4" class="form-control"></textarea></div>
+                                                        <textarea id="descripcionf" name="descripcion"  cols="40" rows="4" class="form-control" readonly="readonly">Viaje con destino a la Universidad para entrar a todas las clases.</textarea></div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="selectf" class="col-4 col-form-label">Categoría</label>
                                                     <div class="col-8">
-                                                        <select id="selectf" name="select" class="custom-select">
-                                                        <option value="dormir">Dormir</option>
-                                                        <option value="estudiar">Estudiar</option>
-                                                        <option value="irclase">Ir a clases</option>
-                                                        <option value="viajar">Viajar</option>
-                                                        <option value="otro">Otro</option>
-                                                    </select>
+                                                        <input type="text" name="select" value="Viaje"  class="form-control" readonly="readonly">
+                                            
+                            
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="lastnamef" class="col-4 col-form-label">Fecha</label>
                                                     <div class="col-8">
-                                                        <input id="lastnamef" name="lastname" placeholder="Fecha" class="form-control" type="date">
+                                                        <input type="text" name="lastname" value="09/10/2019"  class="form-control" type="date" readonly="readonly">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="iniciof" class="col-4 col-form-label">Hora inicio</label>
                                                     <div class="col-8">
-                                                        <input id="iniciof" name="inicio" placeholder="Hora de inicio" class="form-control" required="required" type="time">
+                                                        <input type="text" name="inicio" value="12:00 PM" class="form-control" required="required" readonly="readonly">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label for="iniciof" class="col-4 col-form-label">Duración</label>
-                                                    <div class="col-8">
-                                                        <div ng-app="MyApp" ng-controller="testCtrl">
-                                                            <div time-duration-input ng-model="timeDuration"></div>
-                                                        </div>
+                                            
+                                                    <div class="col-4">
+                                                        <input type="number" min = "0" pattern="^[0-9]" step="1" name="numberHours" class="form-control" required="required" value="01" readonly="readonly"> Horas
                                                     </div>
+                                                    <div class="col-4">
+                                                        <input type="number" min = "0" pattern="^[0-9]" step="1" name="numberHours" class="form-control" required="required" value="00" readonly="readonly"> Minutos
+                                                    </div>
+                                                    
                                                 </div>
                                             </form>
                                         </div>
@@ -479,12 +478,13 @@
                                                         <input id="inicio" name="inicio" placeholder="Hora de inicio" class="form-control" required="required" type="time">
                                                     </div>
                                                 </div>
-                                                <div class="form-group row">
+                                                         <div class="form-group row">
                                                     <label for="inicio" class="col-4 col-form-label">Duración</label>
-                                                    <div class="col-8">
-                                                        <div ng-app="MyApp" ng-controller="testCtrl">
-                                                            <div time-duration-input ng-model="timeDuration"></div>
-                                                        </div>
+                                                      <div class="col-4">
+                                                        <input type="number" min = "0" pattern="^[0-9]" step="1" name="numberHours" class="form-control" required="required" placeholder="horas">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <input type="number" min = "0" pattern="^[0-9]" step="1" name="numberHours" class="form-control" required="required" placeholder="minutos">
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
