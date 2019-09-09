@@ -222,3 +222,7 @@ table {
 .invert-color {
     filter: invert(100%);
 }
+
+.hiddenn {
+display:none;
+}
