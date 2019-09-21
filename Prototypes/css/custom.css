@@ -209,6 +209,9 @@ table {
     background-color: #cc73a4;
 }
 
+
+/* PARA LIMITAR EL ALTO DEL HORARIO */
+
 .scroll-horario {
     height: 450px;
     overflow-y: scroll;
@@ -224,5 +227,5 @@ table {
 }
 
 .hiddenn {
-display:none;
+    display: none;
 }
